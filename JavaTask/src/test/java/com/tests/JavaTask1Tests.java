@@ -28,11 +28,11 @@ public class JavaTask1Tests {
         expPersonNames.add("Dominic");
     }
 
-    public List<String> getPersonNames() {
-        //1. Find Persons younger 34 (included)
-        //2. Only Uniq Persons (no Duplicates)
+    public List<String> getClientNames() {
+        //1. Find Client younger 34 (included)
+        //2. Clients no Duplicates
         //3. Order by Age (from Older to Younger)
-        //4. collect to Person by First Name
+        //4. collect to Client by First Name
 
         //Put here solution
         return null;
@@ -42,7 +42,7 @@ public class JavaTask1Tests {
 
     @Test
     public void checkListPersons() {
-        assertEquals(expPersonNames, getPersonNames());
+        assertEquals(expPersonNames, getClientNames());
 
         //Print the list
     }
