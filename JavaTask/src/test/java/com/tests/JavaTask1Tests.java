@@ -30,7 +30,7 @@ public class JavaTask1Tests {
 
     public List<String> getClientNames() {
         //1. Find Client younger 34 (included)
-        //2. Clients no Duplicates
+        //2. Clients with no Duplicates
         //3. Order by Age (from Older to Younger)
         //4. collect to Client by First Name
 
