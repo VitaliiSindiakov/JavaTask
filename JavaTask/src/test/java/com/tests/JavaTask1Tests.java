@@ -29,9 +29,10 @@ public class JavaTask1Tests {
     }
 
     public List<String> getUserNames() {
-        //1. Find all Users younger 34 (included)
-        //2. Users with no Duplicates
-        //3. Order by Age (from Older to Younger)
+        //Returned List should be:
+        //1. Users with no Duplicates
+        //2. Users younger 34 (included)
+        //3. Ordered by Age (from Older to Younger)
         //4. collect to Users by First Name
 
         //Put here solution
