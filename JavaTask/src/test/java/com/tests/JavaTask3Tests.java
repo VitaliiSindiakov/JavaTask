@@ -1,7 +1,7 @@
 package com.tests;
 
 public class JavaTask3Tests {
-    // Create a method for and
+    // Create a method and
     // Count how many times word appears in the text
     // Case is not important
     String text =

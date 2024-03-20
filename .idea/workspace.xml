@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6a1745-c89e-4e51-b7d1-8cc535af50d4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/JavaTask/JavaTask.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaTask/src/main/java/com/task/dtos/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaTask/src/main/java/com/task/dtos/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaTask/src/main/java/com/task/dtos/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaTask/src/main/java/com/task/dtos/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaTask/src/test/java/com/tests/JavaTask1Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaTask/src/test/java/com/tests/JavaTask1Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaTask/src/test/java/com/tests/JavaTask2Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaTask/src/test/java/com/tests/JavaTask2Tests.java" afterDir="false" />
-    </list>
+    <list default="true" id="7f6a1745-c89e-4e51-b7d1-8cc535af50d4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
