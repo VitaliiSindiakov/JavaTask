@@ -33,7 +33,7 @@ public class JavaTask1Tests {
         //1. Users with no Duplicates
         //2. Users younger 34 (included)
         //3. Ordered by Age (from Older to Younger)
-        //4. collect to Users by First Name
+        //4. collect to Users First Name (returned List should contain First Names only)
 
         //Put here solution
         return null;
