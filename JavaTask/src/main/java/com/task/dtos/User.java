@@ -1,11 +1,11 @@
 package com.task.dtos;
 
-public class Client {
+public class User {
     private final String firstName;
     private final String lastName;
     private final int age;
 
-    public Client(String firstName, String lastName, int age) {
+    public User(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;

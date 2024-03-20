@@ -1,5 +1,6 @@
 package com.tests;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
@@ -8,42 +9,33 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class JavaTask2Tests {
-    public Map<String, String> topping(Map<String, String> map) {
+    public Map<String, String> removeIfEqualsAndPresent(Map<String, String> map) {
 /*
-    Given a map of food keys and topping values
+        Modify and return the given map as follows,
+        if the keys "a" and "b" are both in the map and have equal values, remove them both.
 
-    Modify and return the map as follows,
-    if the key "ice cream" is present, set its value to "cherry".
-    In all cases, set the key "bread" to have the value "butter".
  */
+
         return map;
     }
 
     @Test
-    public void test1() {
-        Map<String, String> map = new HashMap();
-        map.put("ice cream", "peanuts");
-        assertEquals(
-                Map.of("bread", "butter", "ice cream", "cherry")
-                , topping(map));
+    public void firstTest() {
+        Map actualMap = new HashMap(Map.of("a", "aaa", "b", "aaa", "c", "cake"));
+        removeIfEqualsAndPresent(actualMap);
+        Assertions.assertEquals(actualMap, Map.of("c", "cake"));
+
+
+        Map actualMap2 = new HashMap(Map.of("a", "aaa", "b", "bbb"));
+        removeIfEqualsAndPresent(actualMap2);
+        Assertions.assertEquals(actualMap2, Map.of("a", "aaa", "b", "bbb"));
+
+        Map actualMap3 = new HashMap(Map.of("a", "aaa", "b", "bbb", "c", "aaa"));
+        removeIfEqualsAndPresent(actualMap3);
+        Assertions.assertEquals(actualMap3, Map.of("a", "aaa", "b", "bbb", "c", "aaa"));
+
+
+
     }
 
-    @Test
-    public void test2() {
-        Map<String, String> map = new HashMap();
-        assertEquals(
-                Map.of("bread", "butter")
-                , topping(map));
-    }
-
-    @Test
-    public void test3() {
-        Map<String, String> map = new HashMap();
-        map.put("bread", "jam");
-        map.put("ice cream", "strawberries");
-        map.put("salad", "oil");
-        assertEquals(
-                Map.of("bread", "butter", "ice cream", "cherry", "salad", "oil")
-                , topping(map));
-    }
 }

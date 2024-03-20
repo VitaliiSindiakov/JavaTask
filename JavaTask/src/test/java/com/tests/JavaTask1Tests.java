@@ -1,7 +1,7 @@
 package com.tests;
 
-import com.task.dtos.Client;
-import com.task.dtos.Human;
+import com.task.dtos.User;
+import com.task.dtos.Person;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,28 +11,28 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class JavaTask1Tests {
-    List<Human> humans = new ArrayList<>();
+    List<Person> people = new ArrayList<>();
     List<String> expPersonNames = new ArrayList<>();
 
     @BeforeEach
     public void createHumanList() {
-        humans.add(new Human(new Client("Nick", "Jr", 51)));
-        humans.add(new Human(new Client("Dominic", "Dominic", 16)));
-        humans.add(new Human(new Client("John", "Smith", 34)));
-        humans.add(new Human(new Client("Alexander", "Allen", 18)));
-        humans.add(new Human(new Client("Adam", "Rees", 45)));
-        humans.add(new Human(new Client("John", "Smith", 34)));
+        people.add(new Person(new User("John", "Smith", 34)));
+        people.add(new Person(new User("Adam", "Rees", 45)));
+        people.add(new Person(new User("Alexander", "Allen", 18)));
+        people.add(new Person(new User("Dominic", "Dominic", 16)));
+        people.add(new Person(new User("John", "Smith", 34)));
+        people.add(new Person(new User("Nick", "Jr", 51)));
 
         expPersonNames.add("John");
         expPersonNames.add("Alexander");
         expPersonNames.add("Dominic");
     }
 
-    public List<String> getClientNames() {
-        //1. Find all Clients younger 34 (included)
-        //2. Clients with no Duplicates
+    public List<String> getUserNames() {
+        //1. Find all Users younger 34 (included)
+        //2. Users with no Duplicates
         //3. Order by Age (from Older to Younger)
-        //4. collect to Clients by First Name
+        //4. collect to Users by First Name
 
         //Put here solution
         return null;
@@ -42,7 +42,7 @@ public class JavaTask1Tests {
 
     @Test
     public void checkListPersons() {
-        assertEquals(expPersonNames, getClientNames());
+        assertEquals(expPersonNames, getUserNames());
 
         //Print the list
     }

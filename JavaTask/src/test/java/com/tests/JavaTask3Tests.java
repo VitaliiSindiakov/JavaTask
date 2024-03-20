@@ -1,12 +1,7 @@
 package com.tests;
 
-import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
 public class JavaTask3Tests {
+    // Create a method for and
     // Count how many times word appears in the text
     // Case is not important
     String text =
